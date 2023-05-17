@@ -7,20 +7,29 @@
 
 import Foundation
 
-let k: Int = Int(readLine()!)!
-var dp: [Int] = Array(repeating: 0, count: 12)
+let n: Int = Int(readLine()!)!
+let m: Int = Int(readLine()!)!
+var arr: [[Int]] = Array(repeating: [], count: n + 1)
+var visited: [Bool] = Array(repeating: false, count: n + 1)
 
-dp[1] = 1
-dp[2] = 2
-dp[3] = 4
+for _ in 0 ..< m {
+    let ab: [Int] = readLine()!.split(separator: " ").map{Int(String($0))!}
+    let a: Int = ab[0]
+    let b: Int = ab[1]
+    arr[a].append(b)
+    arr[b].append(a)
+}
+var count: Int = 0
 
-for i in 4 ..< 12 {
-    dp[i] = dp[i - 1] + dp[i - 2] + dp[i - 3]
-    
+func dfs(_ v: Int){
+    visited[v] = true
+    count += 1
+    for i in arr[v]{
+        if !visited[i]{
+            dfs(i)
+        }
+    }
 }
 
-for i in 0 ..< k {
-    let n: Int = Int(readLine()!)!
-    print(dp[n])
-}
-
+dfs(1)
+print(count)
