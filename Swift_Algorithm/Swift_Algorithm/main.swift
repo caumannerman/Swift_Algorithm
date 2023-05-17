@@ -7,16 +7,20 @@
 
 import Foundation
 
-let n: Int = Int(readLine()!)!
-var now_five: Int = n / 5
-var rest: Int = n - now_five * 5
+let k: Int = Int(readLine()!)!
+var dp: [Int] = Array(repeating: 0, count: 12)
 
-while now_five >= 0 {
-    if rest % 3 == 0 {
-        print(now_five + rest / 3)
-        exit(0)
-    }
-    now_five -= 1
-    rest += 5
+dp[1] = 1
+dp[2] = 2
+dp[3] = 4
+
+for i in 4 ..< 12 {
+    dp[i] = dp[i - 1] + dp[i - 2] + dp[i - 3]
+    
 }
-print(-1)
+
+for i in 0 ..< k {
+    let n: Int = Int(readLine()!)!
+    print(dp[n])
+}
+
