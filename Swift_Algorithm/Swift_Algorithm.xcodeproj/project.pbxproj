@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8C3D50842A16FD1800C51C45 /* 1806_부분합.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C3D50832A16FD1800C51C45 /* 1806_부분합.swift */; };
 		8C4434F92A135309002645F3 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C4434F82A135309002645F3 /* main.swift */; };
 		8C4435012A135FEE002645F3 /* 2839_설탕배달.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C4435002A135FEE002645F3 /* 2839_설탕배달.swift */; };
 		8C8FC53A2A14516A00D97342 /* 1463_1로만들기.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C8FC5392A14516A00D97342 /* 1463_1로만들기.swift */; };
@@ -28,6 +29,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		8C3D50832A16FD1800C51C45 /* 1806_부분합.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "1806_부분합.swift"; sourceTree = "<group>"; };
 		8C4434F52A135309002645F3 /* Swift_Algorithm */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Swift_Algorithm; sourceTree = BUILT_PRODUCTS_DIR; };
 		8C4434F82A135309002645F3 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		8C4435002A135FEE002645F3 /* 2839_설탕배달.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "2839_설탕배달.swift"; sourceTree = "<group>"; };
@@ -105,6 +107,7 @@
 			isa = PBXGroup;
 			children = (
 				A53D402F2A150CC400139DA6 /* 2003_수들의합2.swift */,
+				8C3D50832A16FD1800C51C45 /* 1806_부분합.swift */,
 			);
 			path = "Two Pointer";
 			sourceTree = "<group>";
@@ -179,6 +182,7 @@
 				A53D40302A150CC400139DA6 /* 2003_수들의합2.swift in Sources */,
 				8C4435012A135FEE002645F3 /* 2839_설탕배달.swift in Sources */,
 				A53D40332A1510C700139DA6 /* 2606_바이러스.swift in Sources */,
+				8C3D50842A16FD1800C51C45 /* 1806_부분합.swift in Sources */,
 				8C4434F92A135309002645F3 /* main.swift in Sources */,
 				8C8FC53E2A145A5C00D97342 /* 9095_123더하기.swift in Sources */,
 			);
