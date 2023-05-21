@@ -21,6 +21,7 @@
 		A53D40302A150CC400139DA6 /* 2003_수들의합2.swift in Sources */ = {isa = PBXBuildFile; fileRef = A53D402F2A150CC400139DA6 /* 2003_수들의합2.swift */; };
 		A53D40332A1510C700139DA6 /* 2606_바이러스.swift in Sources */ = {isa = PBXBuildFile; fileRef = A53D40322A1510C700139DA6 /* 2606_바이러스.swift */; };
 		A53E215C2A1A37530015088B /* 11047_동전0.swift in Sources */ = {isa = PBXBuildFile; fileRef = A53E215B2A1A37530015088B /* 11047_동전0.swift */; };
+		A53E215E2A1A407B0015088B /* 7576_토마토.swift in Sources */ = {isa = PBXBuildFile; fileRef = A53E215D2A1A407B0015088B /* 7576_토마토.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -51,6 +52,7 @@
 		A53D402F2A150CC400139DA6 /* 2003_수들의합2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "2003_수들의합2.swift"; sourceTree = "<group>"; };
 		A53D40322A1510C700139DA6 /* 2606_바이러스.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "2606_바이러스.swift"; sourceTree = "<group>"; };
 		A53E215B2A1A37530015088B /* 11047_동전0.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "11047_동전0.swift"; sourceTree = "<group>"; };
+		A53E215D2A1A407B0015088B /* 7576_토마토.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "7576_토마토.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,6 +127,7 @@
 			isa = PBXGroup;
 			children = (
 				A536C4A12A18F16A0017C689 /* 2667_단지번호붙이기.swift */,
+				A53E215D2A1A407B0015088B /* 7576_토마토.swift */,
 			);
 			path = BFS;
 			sourceTree = "<group>";
@@ -210,6 +213,7 @@
 				8C8FC53A2A14516A00D97342 /* 1463_1로만들기.swift in Sources */,
 				A53D40302A150CC400139DA6 /* 2003_수들의합2.swift in Sources */,
 				A536C49D2A18ED630017C689 /* 2559_수열.swift in Sources */,
+				A53E215E2A1A407B0015088B /* 7576_토마토.swift in Sources */,
 				8C3D508A2A1704D500C51C45 /* 1012_유기농배추.swift in Sources */,
 				8C3D50862A16FED800C51C45 /* 11399_ATM.swift in Sources */,
 				8C4435012A135FEE002645F3 /* 2839_설탕배달.swift in Sources */,
