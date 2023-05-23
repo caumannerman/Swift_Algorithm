@@ -25,6 +25,7 @@
 		A5DC902C2A1CE5AE005574C1 /* 1644_소수의연속합.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5DC902B2A1CE5AE005574C1 /* 1644_소수의연속합.swift */; };
 		A5DC902E2A1CEB15005574C1 /* 4963_섬의개수.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5DC902D2A1CEB15005574C1 /* 4963_섬의개수.swift */; };
 		A5DC90302A1CF1CC005574C1 /* 2468_안전영역.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5DC902F2A1CF1CC005574C1 /* 2468_안전영역.swift */; };
+		A5DC90332A1CF26A005574C1 /* 1920_수찾기.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5DC90322A1CF26A005574C1 /* 1920_수찾기.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -59,6 +60,7 @@
 		A5DC902B2A1CE5AE005574C1 /* 1644_소수의연속합.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "1644_소수의연속합.swift"; sourceTree = "<group>"; };
 		A5DC902D2A1CEB15005574C1 /* 4963_섬의개수.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "4963_섬의개수.swift"; sourceTree = "<group>"; };
 		A5DC902F2A1CF1CC005574C1 /* 2468_안전영역.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "2468_안전영역.swift"; sourceTree = "<group>"; };
+		A5DC90322A1CF26A005574C1 /* 1920_수찾기.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "1920_수찾기.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +102,7 @@
 		8C4434FF2A135FD2002645F3 /* Clear */ = {
 			isa = PBXGroup;
 			children = (
+				A5DC90312A1CF25C005574C1 /* Binary Search */,
 				A536C4A02A18F15D0017C689 /* BFS */,
 				A53D40312A1510BC00139DA6 /* DFS */,
 				A53D402E2A150CAF00139DA6 /* Two Pointer */,
@@ -159,6 +162,14 @@
 				A5DC902D2A1CEB15005574C1 /* 4963_섬의개수.swift */,
 			);
 			path = DFS;
+			sourceTree = "<group>";
+		};
+		A5DC90312A1CF25C005574C1 /* Binary Search */ = {
+			isa = PBXGroup;
+			children = (
+				A5DC90322A1CF26A005574C1 /* 1920_수찾기.swift */,
+			);
+			path = "Binary Search";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -237,6 +248,7 @@
 				A5DC902C2A1CE5AE005574C1 /* 1644_소수의연속합.swift in Sources */,
 				A536C49F2A18F1020017C689 /* 11724_연결요소의개수.swift in Sources */,
 				8C8FC53E2A145A5C00D97342 /* 9095_123더하기.swift in Sources */,
+				A5DC90332A1CF26A005574C1 /* 1920_수찾기.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
