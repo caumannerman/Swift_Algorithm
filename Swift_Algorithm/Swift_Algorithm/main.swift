@@ -7,32 +7,20 @@
 import Foundation
 
 let n: Int = Int(readLine()!)!
-let data: [Int] = readLine()!.split(separator: " ").map{Int(String($0))!}
-let m: Int = Int(readLine()!)!
-let numbers: [Int] = readLine()!.split(separator: " ").map{Int(String($0))!}
-
-let data_sorted = data.sorted()
-
-func bs(target: Int) -> Int{
-    var start: Int = 0
-    var end: Int = n - 1
-    while start <= end {
-        let mid: Int = (start + end ) / 2
-        if data_sorted[mid] == target {
-            return 1
-        }
-        else if data_sorted[mid] > target {
-            end = mid - 1
-        }
-        else {
-            start = mid + 1
+var data: [[Int]] = []
+for _ in 0 ..< n {
+    data.append(readLine()!.split(separator: " ").map{Int(String($0))!})
+}
+for i in 1 ..< n {
+    for j in 0 ..< 3 {
+        switch j{
+        case 0:
+            data[i][j] = data[i][j] + min(data[i - 1][1], data[i - 1][2])
+        case 1:
+            data[i][j] = data[i][j] + min(data[i - 1][0], data[i - 1][2])
+        default:
+            data[i][j] = data[i][j] + min(data[i - 1][0], data[i - 1][1])
         }
     }
-    return 0
 }
-
-
-
-for i in numbers{
-    print(bs(target: i))
-}
+print(data[n - 1].min()!)

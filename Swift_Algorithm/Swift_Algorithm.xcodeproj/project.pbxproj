@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8C31BEB72A1DF414006D2405 /* 1149_RGB거리.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C31BEB62A1DF414006D2405 /* 1149_RGB거리.swift */; };
 		8C3D50842A16FD1800C51C45 /* 1806_부분합.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C3D50832A16FD1800C51C45 /* 1806_부분합.swift */; };
 		8C3D50862A16FED800C51C45 /* 11399_ATM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C3D50852A16FED800C51C45 /* 11399_ATM.swift */; };
 		8C3D50882A1700FB00C51C45 /* 11726_2Xn타일링.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C3D50872A1700FB00C51C45 /* 11726_2Xn타일링.swift */; };
@@ -41,6 +42,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		8C31BEB62A1DF414006D2405 /* 1149_RGB거리.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "1149_RGB거리.swift"; sourceTree = "<group>"; };
 		8C3D50832A16FD1800C51C45 /* 1806_부분합.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "1806_부분합.swift"; sourceTree = "<group>"; };
 		8C3D50852A16FED800C51C45 /* 11399_ATM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 11399_ATM.swift; sourceTree = "<group>"; };
 		8C3D50872A1700FB00C51C45 /* 11726_2Xn타일링.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "11726_2Xn타일링.swift"; sourceTree = "<group>"; };
@@ -118,6 +120,7 @@
 				8C8FC5392A14516A00D97342 /* 1463_1로만들기.swift */,
 				8C8FC53D2A145A5C00D97342 /* 9095_123더하기.swift */,
 				8C3D50872A1700FB00C51C45 /* 11726_2Xn타일링.swift */,
+				8C31BEB62A1DF414006D2405 /* 1149_RGB거리.swift */,
 			);
 			path = DP;
 			sourceTree = "<group>";
@@ -247,6 +250,7 @@
 				A5DC902E2A1CEB15005574C1 /* 4963_섬의개수.swift in Sources */,
 				A5DC902C2A1CE5AE005574C1 /* 1644_소수의연속합.swift in Sources */,
 				A536C49F2A18F1020017C689 /* 11724_연결요소의개수.swift in Sources */,
+				8C31BEB72A1DF414006D2405 /* 1149_RGB거리.swift in Sources */,
 				8C8FC53E2A145A5C00D97342 /* 9095_123더하기.swift in Sources */,
 				A5DC90332A1CF26A005574C1 /* 1920_수찾기.swift in Sources */,
 			);
