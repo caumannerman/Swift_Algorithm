@@ -12,9 +12,10 @@ let n: Int = nm[0]
 let m: Int = nm[1]
 
 var result: [Int] = Array(repeating: 0, count: m)
-var visited: [Bool] = Array(repeating: false, count : n + 1)
+var visited: [Bool] = Array(repeating: false, count: n + 1)
 
-func dfs(_ level: Int) {
+
+func johap(_ level: Int, _ next: Int) {
     if level == m {
         for i in result{
             print(i, terminator: " ")
@@ -23,13 +24,13 @@ func dfs(_ level: Int) {
         return
     }
     
-    for i in 1 ..< n + 1 {
-        if !visited[i]{
-            visited[i] = true
+    for i in next ..< n + 1 {
+        if !visited[i] {
             result[level] = i
-            dfs(level + 1)
+            visited[i] = true
+            johap(level + 1, i + 1)
             visited[i] = false
         }
     }
 }
-dfs(0)
+johap(0, 1)
