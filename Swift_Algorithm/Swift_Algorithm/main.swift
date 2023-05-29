@@ -7,47 +7,29 @@
 
 import Foundation
 
-let n: Int = Int(readLine()!)!
-let m: Int = Int(readLine()!)!
-let INF: Int = Int(1e9)
+let nm: [Int] = readLine()!.split(separator: " ").map{Int(String($0))!}
+let n: Int = nm[0]
+let m: Int = nm[1]
 
-var data: [[Int]] = Array(repeating: Array(repeating: INF, count: n + 1), count: n + 1)
-for i in 1 ..< n + 1 {
-    data[i][i] = 0
-}
+var result: [Int] = Array(repeating: 0, count: m)
+var visited: [Bool] = Array(repeating: false, count : n + 1)
 
-for i in 0 ..< m {
-    let abc: [Int] = readLine()!.split(separator: " ").map{Int(String($0))!}
-    let a = abc[0]
-    let b = abc[1]
-    let c = abc[2]
+func dfs(_ level: Int) {
+    if level == m {
+        for i in result{
+            print(i, terminator: " ")
+        }
+        print()
+        return
+    }
     
-    data[a][b] = min(data[a][b], c)
-}
-
-for k in 1 ..< n + 1 {
     for i in 1 ..< n + 1 {
-        if i == k {
-            continue
-        }
-        for j in 1 ..< n + 1 {
-            if j == i || j == k {
-                continue
-            }
-            
-            data[i][j] = min(data[i][j], data[i][k] + data[k][j])
-            
+        if !visited[i]{
+            visited[i] = true
+            result[level] = i
+            dfs(level + 1)
+            visited[i] = false
         }
     }
 }
-
-for i in 1 ..< n + 1 {
-    for j in 1 ..< n + 1 {
-        if data[i][j] == INF {
-            print(0, terminator: " ")
-        }else {
-            print(data[i][j], terminator: " ")
-        }
-    }
-    print()
-}
+dfs(0)
